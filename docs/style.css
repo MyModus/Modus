@@ -2,10 +2,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: var(--font-sansserif),
+  var(--font-sansserif2), sans-serif;
 }
 
 :root {
-  /* colors */
+  /* gradient end colors */
   --color-left: #b636a5;
   --color-right: #28c8f0;
 
@@ -16,71 +18,38 @@
     var(--color-left)
   );
 
+  /* main design colors */
+  --color-softleft: #c253af;
+  --color-softmiddle: #8b6acf;
+  --color-softright: #3cacec;
+  --color-dark: #0f0f0f;
+  --color-grey: #67717e;
+  --color-light: #e3edfa;
+
+  /* fonts */
+  --font-serif: Didot;
+  --font-serif2: Times;
+  --font-sansserif: Proxima Nova;
+  --font-sansserif2: Arial;
+
   /* border-radius */
   --border-radius: 0.5rem;
 
-  --headerLetterSpacing: 0.2rem;
+  /* --headerLetterSpacing: 0.2rem; */
 }
 
 /*
-=============== 
-Navigation bar
+===============
+Overall Page
 ===============
 */
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.body * {
+  display: inherit;
 }
 
-.nav-link {
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: var(--headerLetterSpacing);
-}
-
-.nav-link:hover {
-}
-
-/*
-=============== 
-Overview
-===============
-*/
-
-.sections {
-  height: 100vh;
-}
-
-/*
-=============== 
-Examples
-===============
-*/
-
-.footer {
-  height: 6rem;
-  background: var(--modus-gradient);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.start {
-  display: inline-block;
-  /* background: black; */
-}
-.install-btn {
-  height: 10rem;
-  width: 5rem;
-  background: red;
-  margin-left: auto;
-  /* background-attachment: scroll; */
-}
-
-.install-btn-text {
-  padding: 1rem, 1rem;
+div {
+  width:100%;
 }
 
 .background-img {
@@ -90,18 +59,175 @@ Examples
   background-size: cover;
 }
 
-.overview {
-  background-color: black;
+.sections {
+  width: 100%;
+}
+
+.content-borders {
+  margin: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
+}
+
+.fancy {
+  width: 100%
+  justify-content: center;
+}
+
+.fancy * {
+  margin: 1em;
+  font-family: var(--font-serif),
+  var(--font-serif2), serif;
+}
+.quote {
+  font-size: 1.5em;
+}
+
+/*
+=============== 
+Navigation bar
+===============
+*/
+
+
+.navbar content-borders {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.navbar-list {
+  justify-content: space-around;
+}
+
+.navbar-logo img {
+  height: 3em;
+}
+
+
+.nav-link {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--headerLetterSpacing);
+  margin: 0 1em 0 1em;
+}
+
+.nav-link:hover {
+}
+
+/*
+===============
+Sections - General
+===============
+*/
+.sections {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+
+/*
+===============
+intro
+===============
+*/
+
+.intro {
+  display: inline-block;
+}
+
+.install-btn {
+  height: 10rem;
+  width: 5rem;
+  background: red;
+  /* background-attachment: scroll; */
+}
+
+.install-btn-text {
+  padding: 1rem, 1rem;
+}
+
+.intro-left-column .fancy * {
+  font-size: 3.2em;
+}
+
+/*
+===============
+Features
+===============
+*/
+.features .fancy * {
+  font-size: 2.8em;
+}
+
+.features {
+  background-color: var(--color-dark);
   color: white;
 }
 
-.examples {
+.features img {
+  width: 60%;
+}
+
+.features .content-borders {
+
+}
+
+/*
+=============== 
+benefits
+===============
+*/
+
+
+.benefits {
   /* background-color: green; */
 }
 
+.benefits-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.benefits-container img {
+  display: flex;
+  height: 18em;
+}
+
+.benefits content-row {
+  margin: 1em 1em 1em 1em;
+  justify-content: space-between;
+}
+
+.benefits .fancy * {
+  font-size: 2em;
+}
+
+.benefits .content-borders * {}
+
+/*
+===============
+Mission
+===============
+*/
+
 .mission {
-  background-color: black;
+  background-color: var(--color-dark);
   color: white;
+}
+
+.mission .content-row {
+  flex-direction: row-reverse;
 }
 
 /*
@@ -109,3 +235,26 @@ Examples
 Footer
 ===============
 */
+
+
+.footer {
+  height: 6rem;
+  background: var(--modus-gradient);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer content-borders {
+  display: flex;
+  flex-flow; row wrap;
+}
+.footer-links {
+  display: flex;
+  flex-flow; row wrap;
+  justify-content: space-evenly;
+}
+
+.footer-links img {
+  height: 1em;
+}

@@ -13,16 +13,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>UBCModus</title>
   </head>
   <body>
     <!-- navigation bar -->
     <nav class="navbar">
-      <div class="navbar-center">
-        <div class="navbar-logo"></div>
+      <div class="content-borders">
+        <div class="navbar-logo">
+          <img src="./pictures/logo.png" alt="nav-logo" />
+        </div>
         <div class="navbar-list">
-          <a href="#overview" class="nav-link">overview</a>
-          <a href="#examples" class="nav-link">examples</a>
+          <a href="#features" class="nav-link">features</a>
+          <a href="#benefits" class="nav-link">benefits</a>
           <a href="#mission" class="nav-link">mission</a>
         </div>
       </div>
@@ -30,122 +31,140 @@
     <!-- end of navigation bar -->
     <div class="background-img">
       <!-- 1st section -->
-      <section class="start sections">
-        <div class="content-upper">
-          <div class="start-left-column">
-            <img src="./pictures/logo.png" alt="logo" />
-            <p>a new way of doing</p>
+      <section class="intro sections">
+      <!-- content inside margins-->
+        <div class=content-borders>
+          <div class="content-row">
+            <div class="intro-left-column">
+              <img src="./pictures/logo.png" alt="logo" />
+              <div class="fancy">
+                <p>a new way of doing</p>
+              </div>
+            </div>
+            <div class="install-btn">
+              <p class="install-btn-text">get modus for chrome</p>
+            </div>
           </div>
-          <div class="install-btn">
-            <p class="install-btn-text">get modus for chrome</p>
+          <div class="content-row">
+            <figure class="fancy quote">
+              <blockquote>
+                Meaningful quotey things by someone smart. More words here so the line is long.
+              </blockquote>
+              <figcaption>
+                &mdash; Name LastName, <cite>Place They Said Thing</cite>
+              </figcaption>
+            </figure>
           </div>
-        </div>
-        <div class="content-lower">
-          <figure class="quote">
-            <blockquote>
-              Meaningful quotey things by someone smart.
-            </blockquote>
-            <figcaption>
-              &mdash; Name LastName, <cite>Place They Said Thing</cite>
-            </figcaption>
-          </figure>
         </div>
       </section>
       <!-- end of 1st section -->
 
       <!-- 2nd section -->
-      <section class="overview sections">
-        <div class="content-upper">
-          <h2>Cleanly execute your best plans for time spent.</h2>
-        </div>
-        <div class="content-lower">
-        <img src="pictures/next_task_popup.png" alt="benefits of modus" />
-          <ul>
-            <li>1 bullet</li>
-            <li>2 another </li>
-            <li>3 and one more</li>
-          </ul>
+      <section class="features sections" id="features">
+      <!-- content inside margins-->
+        <div class=content-borders>
+          <div class="content-upper fancy">
+            <p>Cleanly execute your best plans for time spent.</p>
+          </div>
+          <div class="content-row">
+          <img src="pictures/next_task_popup.png" alt="benefits of modus" />
+            <ul>
+              <li>1 bullet</li>
+              <li>2 another </li>
+              <li>3 and one more</li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- end of 2nd section -->
 
       <!-- 3rd section -->
-      <section class="examples sections">
-        <!-- examples container -->
-        <div class="examples-container content-upper">
-          <!-- single example -->
-          <div class="examples-container-1">
-            <!--Person Icon Silhouette # 235489 | used with permission from
-            https://icon-library.com/icon/person-icon-silhouette-11.html ...how to cite code??-->
-            <img src="pictures/silhouette-pink.png" alt="img1" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              hic.
-            </p>
+      <section class="benefits sections" id="benefits">
+        <!-- content inside margins-->
+        <div class=content-borders>
+          <!-- benefits container -->
+          <div class="benefits-container content-row">
+            <!-- single target user -->
+            <div class="benefits-container-1">
+              <!--Person Icon Silhouette # 235489 | used with permission from
+              https://icon-library.com/icon/person-icon-silhouette-11.html ...how to cite code??-->
+              <img src="pictures/silhouette-pink.png" alt="img1" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+            <!-- single target user  -->
+            <div class="benefits-container-2">
+              <img src="pictures/silhouette-purple.png" alt="img2" />
+              <p>
+                Lorem ipsum dolor sit amet consecteturro,
+                hic.
+              </p>
+            </div>
+            <!-- single target user -->
+            <div class="benefits-container-3">
+              <img src="pictures/silhouette-blue.png" alt="img3" />
+              <p>
+                Lorem ipsum dolor sit isicing elit. Porro,
+                hic.
+              </p>
+            </div>
           </div>
-          <!-- single example -->
-          <div class="examples-container-2">
-            <img src="pictures/silhouette-purple.png" alt="img2" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              hic.
-            </p>
+          <div class="content-row fancy">
+            <p>Blah blah modus can help a lot of people achieve their goals in different situations.</p>
           </div>
-          <!-- single example -->
-          <div class="examples-container-3">
-            <img src="pictures/silhouette-blue.png" alt="img3" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              hic.
-            </p>
-          </div>
+          <!-- end of benefits container -->
         </div>
-        <div class="content-lower">
-          <p>Blah blah modus can help a lot of people achieve their goals in different situations.</p>
-        </div>
-        <!-- end of examples container -->
       </section>
       <!-- end of 3rd section -->
 
       <!-- 4th section -->
-      <section class="mission sections">
-        <h2>Our Mission</h2>
-        <div class="content-upper">
-          <ul>
-            <li>1 bullet</li>
-            <li>2 another </li>
-            <li>3 and one more</li>
-          </ul>
-        </div>
-        <div class="content-lower">
-          <p>Something about our mission</p>
-          <div class="install-btn">
-            <p class="install-btn-text">get modus for chrome</p>
+      <section class="mission sections" id="mission">
+        <!-- content inside margins-->
+        <div class=content-borders>
+          <div class="content-row">
+            <div>
+              <h2>Our Mission</h2>
+              <div>
+                <ul>
+                  <li>1 bullet</li>
+                  <li>2 another </li>
+                  <li>3 and one more</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <p>Something about our mission</p>
+              <div class="install-btn">
+                <p class="install-btn-text">get modus for chrome</p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-        <
       </section>
       <!-- end of 4th section -->
     </div>
     <footer class="footer">
-      <p>&copy; 2022 Copyright Modus</p>
-      <div class="footer-links">
-        <div class="dev-team-1">
-          <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
-          <a href="https://kaixingchen.com/" class="dev-page">Kai Chen</a>
-        </div>
-        <div class="dev-team-2">
-          <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
-          <a href="https://frankwhoee.tech/" class="dev-page">Frank Hui</a>
-        </div>
-        <div class="dev-team-3">
-          <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
-          <a href="https://github.com/timo-hash/" class="dev-page">Timothy Chui</a>
-        </div>
-        <div class="dev-team-4">
-          <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
-          <a href="https://ellenlloyd.ca/" class="dev-page">Ellen Lloyd</a>
+      <!-- content inside margins-->
+      <div class=content-borders>
+        <p>&copy; 2022 Copyright Modus</p>
+        <div class="footer-links">
+          <div class="dev-team-1">
+            <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
+            <a href="https://kaixingchen.com/" class="dev-page">Kai Chen</a>
+          </div>
+          <div class="dev-team-2">
+            <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
+            <a href="https://frankwhoee.tech/" class="dev-page">Frank Hui</a>
+          </div>
+          <div class="dev-team-3">
+            <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
+            <a href="https://github.com/timo-hash/" class="dev-page">Timothy Chui</a>
+          </div>
+          <div class="dev-team-4">
+            <img src="pictures/modus_logo_transparent.png" class="logo-icon" alt="" />
+            <a href="https://ellenlloyd.ca/" class="dev-page">Ellen Lloyd</a>
+          </div>
         </div>
       </div>
     </footer>
