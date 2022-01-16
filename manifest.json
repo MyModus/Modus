@@ -1,0 +1,13 @@
+{
+  "name": "Modus",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Modus :)",
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["inject.js"]
+    }
+],
+"host_permissions": ["<all_urls>"]
+}
