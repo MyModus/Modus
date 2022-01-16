@@ -179,6 +179,7 @@ intro
   box-shadow: var(--box-shadow);
   right: 10px;
   top: 10px;
+  /* mes */
 }
 
 .install-btn-text {
