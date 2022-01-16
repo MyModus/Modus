@@ -2,8 +2,11 @@
   "name": "Modus",
   "version": "0.0.1",
   "manifest_version": 3,
-  "description": "Modus :)",
-
+  "description": "Modus",
+  "permissions": [ "alarms", "activeTab", "scripting", "tabs", "storage", "cookies"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
         "matches": ["<all_urls>"],
@@ -14,9 +17,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab", "scripting", "cookies", "storage"],
 "host_permissions": ["<all_urls>"],
-  "action": {},
   "commands": {
     "_execute_action": {
       "suggested_key": {

@@ -4,13 +4,25 @@ chrome.action.onClicked.addListener(function (tab) {
 	});
 });
 
-chrome.action.onClicked.addListener((tab) => {
-	chrome.scripting.executeScript({
-		target: {tabId: tab.id},
-		func: contentScriptFunc,
-		args: ['action'],
-	});
+// chrome.action.onClicked.addListener((tab) => {
+// 	chrome.scripting.executeScript({
+// 		target: {tabId: tab.id},
+// 		func: contentScriptFunc,
+// 		args: ['action'],
+// 	});
+// });
+
+chrome.alarms.onAlarm.addListener(function( alarm ) {
+  console.log("Got an alarm!", alarm);
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.sendMessage(tabs[0].id, {status: "alarmEnded"}, function(response) {
+      // console.log(response.farewell);
+    });
+  });
 });
+
+
+
 
 function contentScriptFunc(name) {
 	Swal.fire({
@@ -48,7 +60,7 @@ function taskDone(name) {
 		}else{
 			// Redirect here.
 		}
-	})
+	});
 }
 
 // This callback WILL NOT be called for "_execute_action"
