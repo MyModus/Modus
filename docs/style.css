@@ -330,3 +330,15 @@ Footer
 .footer-links img {
   height: 1em;
 }
+
+.footer a {
+  background: var(--color-softleft);
+  border-radius: var(--border-radius);
+  color: white;
+  padding: 0.1rem 1rem;
+  margin: 0.25rem;
+}
+
+.footer a:hover {
+  background: var(--color-softright);
+}
