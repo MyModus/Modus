@@ -6,7 +6,8 @@
   "content_scripts": [
     {
         "matches": ["<all_urls>"],
-        "js": ["inject.js"]
+        "js": ["jquery.min.js", "inject.js"],
+        "css": ["style.css"]
     }
 ],
 "host_permissions": ["<all_urls>"]

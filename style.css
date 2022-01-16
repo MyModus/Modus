@@ -1,0 +1,46 @@
+:root {
+  --progress-bar-height: 4px;
+  --progress-bar-color: gainsboro;
+  --progress-bar-value-color: dodgerblue;
+  --progress-bar-value: 20%;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.progress-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  width: 100%;
+  height: var(--progress-bar-height);
+  background-color: var(--progress-bar-color);
+  border: none;
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--progress-bar-value-color);
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--progress-bar-color);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--progress-bar-value-color);
+}
+
+progress::-ms-fill {
+  background-color: var(--progress-bar-value-color);
+}
