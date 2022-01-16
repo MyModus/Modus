@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.468345mm"
+   height="10.468345mm"
+   viewBox="0 0 10.468345 10.468345"
+   version="1.1"
+   id="svg51699"
+   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview51701"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="9.0407292"
+     inkscape:cx="29.809542"
+     inkscape:cy="27.984468"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs51696">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9732"
+       id="linearGradient37704"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.21661345,0,0,0.21661345,6.9540507,67.001915)"
+       x1="424.77917"
+       y1="314.33124"
+       x2="464.8266"
+       y2="314.33124" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient9732">
+      <stop
+         style="stop-color:#ff00a7;stop-opacity:1;"
+         offset="0"
+         id="stop9728" />
+      <stop
+         style="stop-color:#00e8ff;stop-opacity:1"
+         offset="1"
+         id="stop9730" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-98.070179,-129.85613)">
+    <circle
+       style="fill:none;stroke:url(#linearGradient37704);stroke-width:0.649841;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle37630"
+       cx="103.30435"
+       cy="135.0903"
+       r="4.0124826" />
+  </g>
+</svg>
