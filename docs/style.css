@@ -36,8 +36,9 @@
   --border-radius: 0.5rem;
 
   /* --headerLetterSpacing: 0.2rem; */
-  --text-transition: 0.5s ease-in-out all;
-  --box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  --transition: 0.5s ease-in-out all;
+  --box-shadow: 3px 3px 5px var(--color-softleft);
+  /* --box-shadow: 3px 3px 5px rgba(#c253af, 0.5); */
 }
 
 /*
@@ -165,27 +166,41 @@ intro
 }
 
 .install-btn {
+  
   height: 100px;
   width: 100px;
-  background: red;
+  background-color: rgb(194, 83, 175, 0.40);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10%;
+  border-radius: 20%;
   position: fixed;
-  /* text */
   color: white;
-  /* font-size: 100%; */
-  box-shadow: var(--box-shadow);
-  right: 10px;
-  top: 10px;
-  /* mes */
+  /* box-shadow: var(--box-shadow); */
+  right: 30px;
+  top: 180px;
+  padding: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+
+/* background-color: rgba(7,225,252,0.11);
+  border: none;
+  color: rgba(7,225,252,1);
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: none;
+  display: inline-block;
+  border-radius: 50px; */
 }
 
-.install-btn-text {
-  /* padding: 2rem, 2rem;
-  border: 2rem 2rem; */
-  
+
+
+.install-btn:hover {
+  background-color: rgba(7,225,252,0.70);
+  transition: var(--transition);
 }
 
 .intro-left-column .fancy * {
