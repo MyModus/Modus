@@ -21,7 +21,7 @@
     "_execute_action": {
       "suggested_key": {
         "default": "Ctrl+Q",
-        "mac": "Command+Q"
+        "mac": "Command+Shift+E"
       }
     }
   }

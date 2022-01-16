@@ -14,10 +14,16 @@ chrome.action.onClicked.addListener((tab) => {
 
 function contentScriptFunc(name) {
 	Swal.fire({
-		title: 'Error!',
-		text: 'Do you want to continue',
-		icon: 'error',
-		confirmButtonText: 'Cool'
+		position: 'top-end',
+		icon: 'success',
+		title: 'Something went wrong!',
+		showConfirmButton: false,
+		timer: 5000,
+		backdrop: false,
+		toast: true,
+		customClass: {
+			border: '5px solid black'
+		}
 	})
 }
 
