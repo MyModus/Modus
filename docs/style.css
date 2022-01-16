@@ -165,9 +165,9 @@ intro
 }
 
 .install-btn {
-  height: 100px;
-  width: 100px;
-  background: red;
+  height: 7em;
+  width: 7em;
+  background: var(--color-softleft);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,9 +177,12 @@ intro
   color: white;
   /* font-size: 100%; */
   box-shadow: var(--box-shadow);
-  right: 10px;
-  top: 10px;
+  right: 1em;
+  top: 1em;
   /* mes */
+  padding: 1em;
+  font-size: 1.1em;
+  text-align: center;
 }
 
 .install-btn-text {
