@@ -114,6 +114,8 @@ Navigation bar
   align-items: flex-end;
   display: flex;
   flex-flow: row wrap;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .navbar-list {
@@ -122,7 +124,7 @@ Navigation bar
 }
 
 .navbar-logo img {
-  height: 3em;
+  height: 2.5em;
 }
 
 
@@ -163,6 +165,7 @@ intro
 
 .intro {
   display: inline-block;
+  padding-top: 4em;
 }
 
 .install-btn {
@@ -203,7 +206,7 @@ intro
 }
 
 .intro-left-column .fancy * {
-  font-size: 3.2em;
+  font-size: 4em;
 }
 
 /*
@@ -319,6 +322,10 @@ Footer
   align-items: center;
   width: 100%;
 }
+.footer > * > p {
+  margin-right: 3em;
+}
+
 .footer-links {
   display: flex;
   flex-flow: row wrap;
