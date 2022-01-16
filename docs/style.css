@@ -36,7 +36,25 @@
   --border-radius: 0.5rem;
 
   /* --headerLetterSpacing: 0.2rem; */
+  --text-transition: 0.5s ease-in-out all;
+  --box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 }
+
+/*
+===============
+General Properties
+===============
+*/
+
+div {
+  width:100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 
 /*
 ===============
@@ -48,9 +66,6 @@ Overall Page
   display: inherit;
 }
 
-div {
-  width:100%;
-}
 
 .background-img {
   background: url("./pictures/background.jpeg");
@@ -117,9 +132,13 @@ Navigation bar
   text-transform: capitalize;
   letter-spacing: var(--headerLetterSpacing);
   margin: 0 1em 0 1em;
+  color: var(--color-grey);
+  transition: var(--text-transition);
+  font-size: 2rem;
 }
 
 .nav-link:hover {
+  color: var(--color-left);
 }
 
 /*
@@ -146,14 +165,26 @@ intro
 }
 
 .install-btn {
-  height: 10rem;
-  width: 5rem;
+  height: 100px;
+  width: 100px;
   background: red;
-  /* background-attachment: scroll; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  position: fixed;
+  /* text */
+  color: white;
+  /* font-size: 100%; */
+  box-shadow: var(--box-shadow);
+  right: 10px;
+  top: 10px;
 }
 
 .install-btn-text {
-  padding: 1rem, 1rem;
+  /* padding: 2rem, 2rem;
+  border: 2rem 2rem; */
+  
 }
 
 .intro-left-column .fancy * {
