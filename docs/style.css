@@ -49,8 +49,8 @@ General Properties
 * div {
   width:100%;
 
-  /*margins for debugging*/
-  border: 2px solid #b636a5;
+  /*margins for debugging
+  border: 2px solid #b636a5; */
 }
 
 a {
@@ -69,14 +69,9 @@ Overall Page
   display: inherit;
 }
 
-
 .background-img {
   background: url("./pictures/background.jpeg") fixed center;
   background-size: cover;
-}
-
-.sections {
-  width: 100%;
 }
 
 .content-borders {
@@ -94,6 +89,8 @@ Overall Page
 .fancy {
   width: 100%;
   justify-content: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .fancy * {
@@ -119,8 +116,8 @@ Navigation bar
 }
 
 .navbar-list {
-  justify-content: space-around;
-  padding-left: 2em;
+  justify-content: space-evenly;
+  margin-left: 2em;
 }
 
 .navbar-logo img {
@@ -148,10 +145,12 @@ Sections - General
 ===============
 */
 .sections {
-  height: 100vh;
+  height: auto;
   display: flex;
+  width: 100%;
   flex-flow: column nowrap;
   justify-content: center;
+  padding: 1em 0 1em 0;
 }
 
 
@@ -201,17 +200,20 @@ Features
   font-size: 2.8em;
 }
 
+.features ul {
+  margin-left: 4em;
+  font-size: 0.8em;
+}
+
 .features {
   background-color: var(--color-dark);
   color: white;
+
+  padding-bottom: 2em;
 }
 
 .features img {
   width: 60%;
-}
-
-.features .content-borders {
-
 }
 
 /*
@@ -229,23 +231,36 @@ benefits
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 1em 0 1em 0;
 }
 
 .benefits-container img {
-  display: flex;
-  height: 18em;
+  width: 10em;
+}
+
+.benefits-container > * > * {
+  font-size: x-large;
+  text-align: center;
+  width: 12em;
 }
 
 .benefits .content-row {
-  margin: 1em 1em 1em 1em;
   justify-content: space-between;
 }
 
-.benefits .fancy * {
-  font-size: 2em;
+.benefits .content-row > * {
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-.benefits .content-borders * {}
+.benefits .fancy * {
+  padding: 0.5em;
+  font-size: 2.5em;
+  text-align: center;
+}
 
 /*
 ===============
@@ -260,6 +275,10 @@ Mission
 
 .mission .content-row {
   flex-direction: row-reverse;
+}
+
+.mission .fancy {
+  font-size: 2em;
 }
 
 /*
@@ -282,6 +301,7 @@ Footer
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .footer-links {
