@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-sansserif),
-  var(--font-sansserif2), sans-serif;
+  font-family: var(--font-sansserif), var(--font-sansserif2), sans-serif;
 }
 
 :root {
@@ -48,7 +47,7 @@ General Properties
 */
 
 * div {
-  width:100%;
+  width: 100%;
 
   /*margins for debugging
   border: 2px solid #b636a5; */
@@ -57,8 +56,6 @@ General Properties
 a {
   text-decoration: none;
 }
-
-
 
 /*
 ===============
@@ -96,8 +93,7 @@ Overall Page
 
 .fancy * {
   margin: 1em;
-  font-family: var(--font-serif),
-  var(--font-serif2), serif;
+  font-family: var(--font-serif), var(--font-serif2), serif;
 }
 .quote {
   font-size: 1.5em;
@@ -108,7 +104,6 @@ Overall Page
 Navigation bar
 ===============
 */
-
 
 .navbar .content-borders {
   align-items: flex-end;
@@ -124,7 +119,6 @@ Navigation bar
 .navbar-logo img {
   height: 3em;
 }
-
 
 .nav-link {
   text-align: center;
@@ -154,7 +148,6 @@ Sections - General
   padding: 1em 0 1em 0;
 }
 
-
 /*
 ===============
 intro
@@ -166,9 +159,9 @@ intro
 }
 
 .install-btn {
-  height: 8em;
-  width: 8em;
-  background: var(--color-softleft);
+  height: 100px;
+  width: 100px;
+  background-color: rgb(194, 83, 175, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,29 +169,34 @@ intro
   position: fixed;
   color: white;
   /* box-shadow: var(--box-shadow); */
-  right: 1em;
-  top: 1em;
-  padding: 1em;
+  right: 30px;
+  top: 120px;
+  padding: 3rem;
   text-align: center;
-  /*text-transform: capitalize;*/
+  text-transform: capitalize;
   font-weight: bolder;
-
-/* background-color: rgba(7,225,252,0.11);
-  border: none;
-  color: rgba(7,225,252,1);
-  font-weight: bolder;
-  font-size: 2rem;
-  padding: 15px 32px;
-  text-align: center;
-  text-transform: none;
-  display: inline-block;
-  border-radius: 50px; */
 }
 
-
-
 .install-btn:hover {
-  background-color: rgba(7,225,252,0.70);
+  background-color: rgba(7, 225, 252, 0.7);
+  transition: var(--transition);
+}
+
+.mission-install-btn {
+  background-color: rgb(194, 83, 175, 0.4);
+  border: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 60px 80px;
+  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.mission-install-btn:hover {
+  background-color: rgba(7, 225, 252, 0.7);
   transition: var(--transition);
 }
 
@@ -236,7 +234,6 @@ Features
 benefits
 ===============
 */
-
 
 .benefits {
   /* background-color: green; */
@@ -302,7 +299,6 @@ Footer
 ===============
 */
 
-
 .footer {
   height: 6rem;
   background: var(--modus-gradient);
@@ -326,7 +322,7 @@ Footer
   width: auto;
 }
 
-.footer-links > div{
+.footer-links > div {
   padding: 0 1em 0 1em;
   width: auto;
 }
