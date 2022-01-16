@@ -14,8 +14,8 @@
   /* linear gradient color */
   --modus-gradient: linear-gradient(
     to left,
-    var(--color-right),
-    var(--color-left)
+    var(--color-softright),
+    var(--color-softleft)
   );
 
   /* main design colors */
@@ -36,8 +36,9 @@
   --border-radius: 0.5rem;
 
   /* --headerLetterSpacing: 0.2rem; */
-  --text-transition: 0.5s ease-in-out all;
-  --box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  --transition: 0.5s ease-in-out all;
+  --box-shadow: 3px 3px 5px var(--color-softleft);
+  /* --box-shadow: 3px 3px 5px rgba(#c253af, 0.5); */
 }
 
 /*
@@ -131,7 +132,7 @@ Navigation bar
   /* letter-spacing: var(--headerLetterSpacing); */
   margin: 0 1em 0 1em;
   color: var(--color-grey);
-  transition: var(--text-transition);
+  transition: var(--transition);
   font-size: 2rem;
 }
 
@@ -165,27 +166,40 @@ intro
 }
 
 .install-btn {
-  height: 100px;
-  width: 100px;
-  background: red;
+  height: 8em;
+  width: 8em;
+  background: var(--color-softleft);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10%;
+  border-radius: 20%;
   position: fixed;
-  /* text */
   color: white;
-  /* font-size: 100%; */
-  box-shadow: var(--box-shadow);
-  right: 10px;
-  top: 10px;
-  /* mes */
+  /* box-shadow: var(--box-shadow); */
+  right: 1em;
+  top: 1em;
+  padding: 1em;
+  text-align: center;
+  /*text-transform: capitalize;*/
+  font-weight: bolder;
+
+/* background-color: rgba(7,225,252,0.11);
+  border: none;
+  color: rgba(7,225,252,1);
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: none;
+  display: inline-block;
+  border-radius: 50px; */
 }
 
-.install-btn-text {
-  /* padding: 2rem, 2rem;
-  border: 2rem 2rem; */
-  
+
+
+.install-btn:hover {
+  background-color: rgba(7,225,252,0.70);
+  transition: var(--transition);
 }
 
 .intro-left-column .fancy * {
