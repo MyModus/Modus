@@ -14,8 +14,8 @@
   /* linear gradient color */
   --modus-gradient: linear-gradient(
     to left,
-    var(--color-right),
-    var(--color-left)
+    var(--color-softright),
+    var(--color-softleft)
   );
 
   /* main design colors */
@@ -166,8 +166,8 @@ intro
 }
 
 .install-btn {
-  height: 7em;
-  width: 7em;
+  height: 8em;
+  width: 8em;
   background: var(--color-softleft);
   display: flex;
   align-items: center;
@@ -178,9 +178,9 @@ intro
   /* box-shadow: var(--box-shadow); */
   right: 1em;
   top: 1em;
-  padding: 3rem;
+  padding: 1em;
   text-align: center;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   font-weight: bolder;
 
 /* background-color: rgba(7,225,252,0.11);
