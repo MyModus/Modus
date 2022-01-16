@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: var(--font-sansserif),
   var(--font-sansserif2), sans-serif;
@@ -46,8 +46,11 @@ General Properties
 ===============
 */
 
-div {
+* div {
   width:100%;
+
+  /*margins for debugging*/
+  border: 2px solid #b636a5;
 }
 
 a {
@@ -68,9 +71,7 @@ Overall Page
 
 
 .background-img {
-  background: url("./pictures/background.jpeg");
-  background-attachment: fixed;
-  background-position: center;
+  background: url("./pictures/background.jpeg") fixed center;
   background-size: cover;
 }
 
@@ -88,11 +89,11 @@ Overall Page
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
 }
 
 .fancy {
-  width: 100%
+  width: 100%;
   justify-content: center;
 }
 
@@ -112,7 +113,7 @@ Navigation bar
 */
 
 
-.navbar content-borders {
+.navbar .content-borders {
   align-items: flex-end;
   display: flex;
   flex-flow: row wrap;
@@ -120,6 +121,7 @@ Navigation bar
 
 .navbar-list {
   justify-content: space-around;
+  padding-left: 2em;
 }
 
 .navbar-logo img {
@@ -130,7 +132,7 @@ Navigation bar
 .nav-link {
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: var(--headerLetterSpacing);
+  /* letter-spacing: var(--headerLetterSpacing); */
   margin: 0 1em 0 1em;
   color: var(--color-grey);
   transition: var(--text-transition);
@@ -235,7 +237,7 @@ benefits
   height: 18em;
 }
 
-.benefits content-row {
+.benefits .content-row {
   margin: 1em 1em 1em 1em;
   justify-content: space-between;
 }
@@ -275,15 +277,24 @@ Footer
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
-.footer content-borders {
+.footer .content-borders {
   display: flex;
-  flex-flow; row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
 }
 .footer-links {
   display: flex;
-  flex-flow; row wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
+  width: auto;
+}
+
+.footer-links > div{
+  padding: 0 1em 0 1em;
+  width: auto;
 }
 
 .footer-links img {
