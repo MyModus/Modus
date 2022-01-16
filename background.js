@@ -23,7 +23,35 @@ chrome.alarms.onAlarm.addListener(function( alarm ) {
   });
 });
 
+const getHostnameFromRegex = (url) => {
+	// run against regex
+	const matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+	// extract hostname (will be null if no match is found)
+	return matches && matches[1];
+}
 
+
+
+function renderTasks(tasklist) {
+	document.getElementById("tasks").innerHTML = "";
+	for(i = 0; i<tasklist.length; i++){
+		var a = new Date(); // Current date now.
+		var b = tasklist[i].time
+		var d = parseInt((b-a)/60000);
+		document.getElementById("tasks").innerHTML +=
+			"  <div class=\"row py-3\">\n" +
+			"    <div class=\"col text-center\">\n" +
+			"      <img id=\"icon-"+i+"\" width='23px' src=\"http://"+getHostnameFromRegex(tasklist[i].url) + "/favicon.ico"+"\">\n" +
+			"    </div>\n" +
+			"    <div class=\"col text-center\">\n" +
+			"      <span id=\"path-"+i+"\">"+tasklist[i].url+"</span>\n" +
+			"    </div>\n" +
+			"    <div class=\"col text-center\">\n" +
+			"      <span id=\"time-"+i+"\">"+d+"m</span>\n" +
+			"    </div>\n" +
+			"  </div>\n"
+	}
+}
 
 
 function contentScriptFunc(name) {
