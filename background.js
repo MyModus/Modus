@@ -1,3 +1,5 @@
+tasks = []
+
 chrome.action.onClicked.addListener(function (tab) {
 	chrome.tabs.executeScript(tab.ib, {
 		file: 'inject.js'
@@ -39,11 +41,9 @@ function contentScriptFunc(name) {
 	})
 }
 
-function addTask(url, time){
 
-}
 
-function taskDone(name) {
+function taskDone() {
 	Swal.fire({
 		title: 'Way to go!\n Ready to move on to the next task?',
 		showDenyButton: true,

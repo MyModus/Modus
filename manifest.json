@@ -10,14 +10,21 @@
   "content_scripts": [
     {
         "matches": ["<all_urls>"],
-        "js": ["sweetalert2@11.js","jquery.min.js", "inject.js"],
-        "css": ["style.css"]
+        "js": ["bootstrap.js","sweetalert2@11.js","jquery.min.js", "inject.js"],
+        "css": ["bootstrap.css","style.css"]
     }
 ],
   "background": {
     "service_worker": "background.js"
   },
 "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": {
+      "32": "logo.png"
+    },
+    "default_title": "Modus",
+    "default_popup": "popup.html"
+  },
   "commands": {
     "_execute_action": {
       "suggested_key": {
