@@ -7,14 +7,39 @@
   --color-left: #b636a5;
   --color-right: #28c8f0;
 
+  /* linear gradient color */
+  --modus-gradient: linear-gradient(
+    to left,
+    var(--color-right),
+    var(--color-left)
+  );
+
   /* border-radius */
   --border-radius: 0.5rem;
 }
 
 .footer {
   height: 6rem;
-  background: linear-gradient(to left, var(--color-right), var(--color-left));
+  background: var(--modus-gradient);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.install-btn {
+  height: 10rem;
+  width: 5rem;
+  background: red;
+  /* background-attachment: scroll; */
+}
+
+.install-btn-text {
+  padding: 1rem, 1rem;
+}
+
+.background-img {
+  background: url("./pictures/background.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
