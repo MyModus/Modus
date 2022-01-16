@@ -124,7 +124,8 @@ Navigation bar
 }
 
 .navbar-logo img {
-  height: 2.5em;
+  max-height: 2.5em;
+  max-width: 90%
 }
 
 
@@ -215,7 +216,7 @@ Features
 ===============
 */
 .features .fancy * {
-  font-size: 2.8em;
+  font-size: 2.5em;
 }
 
 .features ul {
@@ -230,7 +231,8 @@ Features
   padding-bottom: 2em;
 }
 
-.features img {
+.features .demo-img > img {
+  display: block;
   width: 60%;
 }
 
@@ -287,6 +289,7 @@ Mission
 */
 
 .mission {
+  display:none;
   background-color: var(--color-dark);
   color: white;
 }
