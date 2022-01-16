@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="10.468345mm"
-   height="10.468345mm"
-   viewBox="0 0 10.468345 10.468345"
+   width="32.195347mm"
+   height="32.195347mm"
+   viewBox="0 0 32.195348 32.195348"
    version="1.1"
    id="svg51699"
    inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="9.0407292"
-     inkscape:cx="29.809542"
-     inkscape:cy="27.984468"
+     inkscape:zoom="1.1300912"
+     inkscape:cx="-52.65062"
+     inkscape:cy="11.503497"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="1920"
@@ -40,7 +40,7 @@
        xlink:href="#linearGradient9732"
        id="linearGradient37704"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.21661345,0,0,0.21661345,6.9540507,67.001915)"
+       gradientTransform="matrix(0.6456999,0,0,0.6456999,-183.90486,-67.873387)"
        x1="424.77917"
        y1="314.33124"
        x2="464.8266"
@@ -62,12 +62,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-98.070179,-129.85613)">
+     transform="translate(-87.206678,-118.99263)">
     <circle
-       style="fill:none;stroke:url(#linearGradient37704);stroke-width:0.649841;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:url(#linearGradient37704);stroke-width:1.93711;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle37630"
        cx="103.30435"
        cy="135.0903"
-       r="4.0124826" />
+       r="11.960752" />
   </g>
 </svg>

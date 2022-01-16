@@ -44,3 +44,11 @@ progress::-webkit-progress-value {
 progress::-ms-fill {
   background-color: var(--progress-bar-value-color);
 }
+
+.round-border{
+  border-radius: 2rem; !important;
+}
+
+.no-border{
+  border-color: transparent; !important;
+}

@@ -17,7 +17,6 @@
     progressWrapper.appendChild(progressElement);
 
     document.getElementsByTagName('html')[0].prepend(progressWrapper);
-
     $(document).ready(function() {
         const win = $(window);
         const doc = $(document);
