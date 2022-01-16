@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --color-left: #b636a5;
+  --color-right: #28c8f0;
+
+  /* border-radius */
+  --border-radius: 0.5rem;
+}
+
+.footer {
+  height: 6rem;
+  background: linear-gradient(to left, var(--color-right), var(--color-left));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
