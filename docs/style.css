@@ -53,6 +53,12 @@ Overview
   height: 100vh;
 }
 
+/*
+=============== 
+Examples
+===============
+*/
+
 .footer {
   height: 6rem;
   background: var(--modus-gradient);
