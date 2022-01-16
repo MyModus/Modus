@@ -165,7 +165,7 @@ intro
 .install-btn {
   height: 100px;
   width: 100px;
-  background-color: rgb(194, 83, 175, 0.4);
+  background-color: rgba(194, 83, 175, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +187,7 @@ intro
 }
 
 .mission-install-btn {
-  background-color: rgb(194, 83, 175, 0.4);
+  background-color: rgba(194, 83, 175, 0.4);
   border: none;
   color: white;
   font-weight: bolder;
@@ -229,9 +229,17 @@ Features
   padding-bottom: 2em;
 }
 
+.features .demo-img {
+  width: 100%;
+  display: flex;
+  align-items: normal;
+}
+
 .features .demo-img > img {
-  display: block;
+  object-fit: contain;
+  max-width: 960px;
   width: 60%;
+  height: auto;
 }
 
 /*
