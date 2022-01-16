@@ -41,7 +41,10 @@ function contentScriptFunc(name) {
 	})
 }
 
-
+function addTask(url,time){
+	tasks.push({url,time});
+	console.log(tasks)
+}
 
 function taskDone() {
 	Swal.fire({

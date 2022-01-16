@@ -10,7 +10,7 @@
   "content_scripts": [
     {
         "matches": ["<all_urls>"],
-        "js": ["bootstrap.js","sweetalert2@11.js","jquery.min.js", "inject.js"],
+        "js": ["background.js","anime.js","bootstrap.js","sweetalert2@11.js","jquery.min.js", "inject.js"],
         "css": ["bootstrap.css","style.css"]
     }
 ],
