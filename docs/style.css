@@ -1,4 +1,6 @@
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -18,6 +20,10 @@
   --border-radius: 0.5rem;
 }
 
+.sections {
+  height: 100vh;
+}
+
 .footer {
   height: 6rem;
   background: var(--modus-gradient);
@@ -26,10 +32,15 @@
   justify-content: center;
 }
 
+.start {
+  display: inline-block;
+  /* background: black; */
+}
 .install-btn {
   height: 10rem;
   width: 5rem;
   background: red;
+  margin-left: auto;
   /* background-attachment: scroll; */
 }
 
@@ -42,4 +53,16 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.overview {
+  background-color: black;
+}
+
+.examples {
+  /* background-color: green; */
+}
+
+.mission {
+  background-color: black;
 }
