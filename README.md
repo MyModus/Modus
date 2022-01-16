@@ -1,2 +1,2 @@
 # Modus
-Subreddit sentiment analysis
+A free chrome extension for task planning and execution, your way.
